@@ -5,7 +5,7 @@
       color="primary"
       dark
     >
-      <div class="d-flex align-center">
+      <!-- <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
           class="shrink mr-2"
@@ -23,8 +23,14 @@
           src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
           width="100"
         />
-      </div>
-
+      </div> -->
+      <v-toolbar>
+        <v-toolbar-title>
+          <span>マイアドレス帳</span>
+        </v-toolbar-title>
+        
+      </v-toolbar>
+      
       <v-spacer></v-spacer>
 
       <v-btn
@@ -38,21 +44,21 @@
     </v-app-bar>
 
     <v-content>
-      <HelloWorld/>
+      <!-- <HelloWorld/> -->
     </v-content>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+// import HelloWorld from './components/HelloWorld';
+import SideNav from '@/components/SideNav';
+
 
 export default {
   name: 'App',
-
   components: {
-    HelloWorld,
+    // SideNav
   },
-
   data: () => ({
     //
   }),
